@@ -28,34 +28,37 @@ class Users extends Controller
         // if we have POST data to create a new user entry
         if (isset($_POST["submit_add_user"]))
 		{
-			if($_POST["password"]==$_POST["password_conf"])
+			if(isset($_POST["firstname"]) and isset($_POST["surname"]) and isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["password_conf"]))
 			{
-				$usern = $this->loadModel('StatsModel');
-    	        $val = $usern->search_username($_POST["username"]);//model
-            	// load model, perform an action on the model
-				if(!$val)
+				if($_POST["password"]==$_POST["password_conf"])
 				{
+					$usern = $this->loadModel('StatsModel');
+			        $val = $usern->search_username($_POST["username"]);//model
 		        	// load model, perform an action on the model
-			        $user_model = $this->loadModel('UserModel');
-			        $user_model->addUser($_POST["firstname"], $_POST["surname"], $_POST["username"], $_POST["password"]);//model
-					if($user_model)
+					if(!$val)
 					{
-						// where to go after user has been added
-						header('location: ' . URL . 'users/index');
+				    	// load model, perform an action on the model
+					    $user_model = $this->loadModel('UserModel');
+					    $user_model->addUser($_POST["firstname"], $_POST["surname"], $_POST["username"], $_POST["password"]);//model
+						if($user_model)
+						{
+							// where to go after user has been added
+							header('location: ' . URL . 'users/index');
+						}
+						else
+						{
+							echo 'Error al insertar';
+						}
 					}
 					else
 					{
-						echo 'Error al insertar';
+						echo 'usado';
 					}
 				}
 				else
 				{
-					echo 'usado';
+					echo 'Error: Las contraseñas no coinciden';
 				}
-			}
-			else
-			{
-				echo 'Error: Las contraseñas no coinciden';
 			}
         }
     }

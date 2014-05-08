@@ -3,6 +3,9 @@ appbase
 
 Base Application OOP and MVC in PHP (PDO), MySQL and jQuery - Based on PHP-MVC project
 
+## Requirements
+PHP 5.3+
+
 ## Installation
 ### Directories
 Unzip to your project directory eg /opt/lampp/htdocs/ or /var/www/html/ ...
