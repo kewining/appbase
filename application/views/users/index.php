@@ -13,7 +13,7 @@
             <input type="password" name="password" value="" required /><br>
             <label>Confirm Password</label>
             <input type="password" name="password_conf" value="" required /><br>
-            <input type="submit" name="submit_add_user" value="Submit" />
+            <input type="submit" name="submit_add_users" value="Submit" />
         </form>
     </div>
     <!-- main content output -->
