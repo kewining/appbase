@@ -1,2 +1,2 @@
-INSERT INTO `user` (`id_user`, `name`, `surname`, `username`, `password`) VALUES
-(1, 'Kewin Daniel', 'Serquen Campos', 'kewining', '123456');
+INSERT INTO `users` (`id_user`, `firstname`, `surname`, `username`, `passw`) VALUES
+(1, 'kewin daniel', 'Serquen Campos1', 'kewining1', '12345678');

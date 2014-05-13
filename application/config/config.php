@@ -17,8 +17,8 @@ ini_set("display_errors", 1);
  * Configuration for: Project URL
  * Put your URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
  */
-define('URL', 'http://127.0.0.1/appbase/');
-define('DIREC_BASE', '/opt/lampp/htdocs/appbase');
+define('URL', 'http://localhost/appbase/');
+define('DIREC_BASE', '/var/www/appbase/');
 
 /**
  * Configuration for: Database
@@ -28,6 +28,6 @@ define('DB_TYPE', 'mysql');
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'appbase');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'toor');
 define('DB_ENCODING', 'utf8');
 define('APP_NAME', 'AppBase');

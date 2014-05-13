@@ -1,8 +1,8 @@
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) NOT NULL,
+  `firstname` varchar(20) NOT NULL,
   `surname` varchar(30) NOT NULL,
   `username` varchar(15) NOT NULL,
-  `password` varchar(64) NOT NULL,
+  `passw` varchar(64) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

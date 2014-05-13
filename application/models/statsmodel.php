@@ -16,7 +16,7 @@ class StatsModel
 
     public function getAmountOfUsers()
     {
-        $sql = "SELECT COUNT(id_user) AS amount_of_users FROM user";
+        $sql = "SELECT COUNT(id_user) AS amount_of_users FROM users";
         $query = $this->db->prepare($sql);
         $query->execute();
 
