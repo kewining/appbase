@@ -26,7 +26,7 @@ class Users extends Controller
     public function addUser()
     {
         // if we have POST data to create a new user entry
-        if (isset($_POST["submit_add_user"]))
+        if (isset($_POST["submit_add_users"]))
 		{
 			if(isset($_POST["firstname"]) and isset($_POST["surname"]) and isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["password_conf"]))
 			{
